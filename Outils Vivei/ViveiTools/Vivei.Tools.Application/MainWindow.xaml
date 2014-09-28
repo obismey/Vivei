@@ -1,0 +1,77 @@
+﻿<Window xmlns:CoreUI="clr-namespace:Vivei.Tools.Core.UI;assembly=Vivei.Tools.Core.UI"  x:Class="MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="clr-namespace:Vivei.Tools.Application"
+    xmlns:AvalonDock="clr-namespace:AvalonDock;assembly=AvalonDock"
+    Title="MainWindow" Height="350" Width="825" WindowState="Maximized">
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="{Binding Source={x:Static local:DynamicSettings.Instance}, Path=ToolBarTopHeight, Mode=TwoWay}" MaxHeight="150" MinHeight="50"/>
+            <RowDefinition Height="{Binding Source={x:Static local:DynamicSettings.Instance}, Path=ToolBarBottomHeight, Mode=TwoWay}" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Border Background="LightGray" Grid.ColumnSpan="3" >
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="20,10,0,10" DataContext="{x:Static local:UIService.Instance}">
+                <Button  Style="{DynamicResource ToolBarButtonStyle}" Margin="0,0,20,0" Command="{Binding Path=HomeMenuItem}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Icones/Home.png" />
+                    </Button.Background>
+                </Button>
+                <Button  Style="{DynamicResource ToolBarButtonStyle}" Margin="0,0,20,0" Command="{Binding Path=BackMenuItem}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Icones/left34.png"  />
+                    </Button.Background>
+                </Button>
+                <Button  Style="{DynamicResource ToolBarButtonStyle}"  Margin="0,0,20,0" Command="{Binding Path=ForwardMenuItem}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Icones/right32.png"  />
+                    </Button.Background>
+                </Button>
+
+                <Rectangle Fill="DarkGray" Width="2" Margin="0,0,20,0"/>
+
+                <Button  Style="{DynamicResource ToolBarButtonStyle}" Margin="0,0,20,0" Command="{Binding Path=UndoMenuItem}" ToolTip="{Binding Path=LastToken.Message, Source={x:Static local:UndoRedoService.Instance}}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Icones/appbar.undo.png" />
+                    </Button.Background>
+                </Button>
+                <Button  Style="{DynamicResource ToolBarButtonStyle}"  Margin="0,0,20,0" Command="{Binding Path=RedoMenuItem}" ToolTip="{Binding Path=LastUndoToken.Message, Source={x:Static local:UndoRedoService.Instance}}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Icones/appbar.redo.png"   />
+                    </Button.Background>
+                </Button>
+
+                <Rectangle Fill="DarkGray" Width="2" Margin="0,0,20,0"/>
+
+                <Button  Style="{DynamicResource ToolBarButtonStyle}"  Margin="0,0,20,0" Command="{Binding Path=WindowsMenuItem}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Icones/squares6.png"  />
+                    </Button.Background>
+                </Button>
+                <Button  Style="{DynamicResource ToolBarButtonStyle}"  Margin="0,0,20,0" Command="{Binding Path=OptionsMenuItem}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Icones/appbar.tools.png"  />
+                    </Button.Background>
+                </Button>
+                <Button  Style="{DynamicResource ToolBarButtonStyle}"  Margin="0,0,20,0" Command="{Binding Path=HelpMenuItem}">
+                    <Button.Background>
+                        <ImageBrush ImageSource="Icones/qmark.png"   />
+                    </Button.Background>
+                </Button>
+            </StackPanel>
+        </Border>
+        <GridSplitter HorizontalAlignment="Stretch" Background="Transparent" Height="2" VerticalAlignment="Bottom" />
+        <AvalonDock:DockingManager Name="DockingManager" Grid.Row="1" Background="White" DataContext="{x:Static local:UIService.Instance}" DocumentsSource="{Binding Path=Documents}">
+            <!--<AvalonDock:ResizingPanel>
+                <AvalonDock:DockablePane Name="DefaultDockablePane" >
+                 
+                </AvalonDock:DockablePane>
+                <AvalonDock:DocumentPane>
+                </AvalonDock:DocumentPane>
+            </AvalonDock:ResizingPanel>-->
+        </AvalonDock:DockingManager>
+        <Border Grid.Row="2" BorderThickness="1" >
+         <TextBlock Text="Statut" Padding="2" Background="White" />
+        </Border>
+    </Grid>
+</Window>

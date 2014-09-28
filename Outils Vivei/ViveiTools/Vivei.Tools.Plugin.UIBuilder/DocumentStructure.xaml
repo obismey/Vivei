@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="DocumentStructure"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Vivei.Tools.Plugin.UIBuilder"
+             mc:Ignorable="d" 
+             d:DesignHeight="300" d:DesignWidth="300">
+    <Grid>
+        <TreeView  >
+            <TreeViewItem Header="Document" IsExpanded="{Binding IsExpanded, Mode=TwoWay}" DataContext="{x:Static local:Project.Current}"  ItemsSource="{Binding ActiveDocument.RootNodes}">
+                <TreeViewItem.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding Children}">
+                        <HierarchicalDataTemplate.ItemContainerStyle>
+                            <Style TargetType="TreeViewItem"  >
+                                <Setter Property="IsSelected" Value="{Binding IsSelected, Mode=TwoWay}" />
+                                <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                            </Style>
+                        </HierarchicalDataTemplate.ItemContainerStyle>
+                        <DockPanel>
+                            <!--<CheckBox  DockPanel.Dock="Left" VerticalAlignment="Center" Margin="2" IsChecked="{Binding IsSelected, Mode=TwoWay}" />-->
+                            <TextBlock Padding="2" Margin="2" VerticalAlignment="Center" Text="{Binding Caption}">
+                                <TextBlock.ContextMenu>
+                                    <ContextMenu ItemsSource="{Binding Commands}">
+                                        <ContextMenu.ItemTemplate>
+                                            <DataTemplate>
+                                                <TextBlock Text="{Binding Caption}" />
+                                            </DataTemplate>
+                                        </ContextMenu.ItemTemplate>
+                                    </ContextMenu>
+                                </TextBlock.ContextMenu>
+                            </TextBlock>
+                        </DockPanel>
+                    </HierarchicalDataTemplate>
+                </TreeViewItem.ItemTemplate>
+                <TreeViewItem.ItemContainerStyle>
+                    <Style TargetType="TreeViewItem"  >
+                        <Setter Property="IsExpanded" Value="{Binding IsExpanded, Mode=TwoWay}" />
+                    </Style>
+                </TreeViewItem.ItemContainerStyle>
+            </TreeViewItem>
+        </TreeView>
+
+    </Grid>
+</UserControl>

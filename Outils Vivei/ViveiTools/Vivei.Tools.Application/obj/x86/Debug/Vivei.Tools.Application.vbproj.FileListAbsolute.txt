@@ -1,0 +1,25 @@
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Application.exe
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Application.pdb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Application.xml
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\MainWindow.baml
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\MainWindow.g.vb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Application.g.vb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application_MarkupCompile.cache
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application.g.resources
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application.Resources.resources
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application.vbproj.GenerateResource.Cache
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application.exe
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application.xml
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application.pdb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Modules\Keep This Folder Empy.txt
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\AvalonDock.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Application.baml
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Core.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Core.pdb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application_MarkupCompile.lref
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Application.exe.config
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\obj\x86\Debug\Vivei.Tools.Application.vbprojResolveAssemblyReference.cache
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Core.UI.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Core.UI.pdb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Vivei.Tools.Core.UI.xml
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Application\bin\Debug\Xceed.Wpf.Toolkit.dll

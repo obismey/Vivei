@@ -1,0 +1,58 @@
+<ResourceDictionary
+ xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+ xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+ xmlns:local="clr-namespace:Vivei.Tools.Plugin.UIBuilder">
+
+
+
+    <Style TargetType="{x:Type local:BaseControl}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type local:BaseControl}">
+                    <DockPanel LastChildFill="True">
+                        <Border Name="HeaderCtrl" DockPanel.Dock="Top" DockPanel.ZIndex="1" RenderTransformOrigin="0.5,0.5" Style="{TemplateBinding HeaderContainerStyle}" >
+                            <ContentPresenter ContentSource="Header"	 />
+                        </Border>
+                        <Border Name="ContentCtrl" DockPanel.ZIndex="-1" RenderTransformOrigin="0.5,0.5" Style="{TemplateBinding ContentContainerStyle}" >
+                            <ContentPresenter ContentSource="Content"	 />
+                        </Border>
+                    </DockPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="HeaderPosition" Value="Top">
+                            <Setter TargetName="HeaderCtrl" Property="DockPanel.Dock" Value="Top" />
+                            <Setter TargetName="ContentCtrl" Property="DockPanel.Dock" Value="Bottom" />
+                        </Trigger>
+                        <Trigger Property="HeaderPosition" Value="Left">
+                            <Setter	TargetName="HeaderCtrl" Property="DockPanel.Dock" Value="Left" />
+                            <Setter	TargetName="ContentCtrl" Property="DockPanel.Dock" Value="Right" />
+                            <Setter TargetName="HeaderCtrl" Property="LayoutTransform" >
+                                <Setter.Value>
+                                    <RotateTransform Angle="90" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="HeaderPosition" Value="Right">
+                            <Setter TargetName="ContentCtrl" Property="DockPanel.Dock" Value="Left" />
+                            <Setter TargetName="HeaderCtrl" Property="DockPanel.Dock" Value="Right" />
+                            <Setter TargetName="HeaderCtrl" Property="LayoutTransform" >
+                                <Setter.Value>
+                                    <RotateTransform Angle="90" />
+                                </Setter.Value>
+                            </Setter>
+                        </Trigger>
+                        <Trigger Property="HeaderPosition" Value="Bottom">
+                            <Setter TargetName="ContentCtrl" Property="DockPanel.Dock" Value="Top" />
+                            <Setter TargetName="HeaderCtrl" Property="DockPanel.Dock" Value="Bottom" />
+                        </Trigger>
+                        <Trigger Property="Header" Value="">
+                            <Setter TargetName="HeaderCtrl" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                        <Trigger Property="Header" Value="{x:Null}">
+                            <Setter	 TargetName="HeaderCtrl" Property="Visibility" Value="Collapsed" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>

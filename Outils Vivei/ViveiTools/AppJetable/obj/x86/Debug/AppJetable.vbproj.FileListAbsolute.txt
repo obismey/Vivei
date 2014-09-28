@@ -1,0 +1,13 @@
+D:\Outils Vivei\ViveiTools\AppJetable\bin\Debug\AppJetable.exe
+D:\Outils Vivei\ViveiTools\AppJetable\bin\Debug\AppJetable.pdb
+D:\Outils Vivei\ViveiTools\AppJetable\bin\Debug\AppJetable.xml
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\MainWindow.baml
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\MainWindow.g.vb
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\Application.g.vb
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable_MarkupCompile.cache
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.g.resources
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.Resources.resources
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.vbproj.GenerateResource.Cache
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.exe
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.xml
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.pdb

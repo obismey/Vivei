@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Data>
+  <Property Name="ToolBarHeight" Value="58*" Type="GridLength" />
+  <Property Name="ToolBarTopHeight" Value="58" Type="GridLength" />
+  <Property Name="ToolBarBottomHeight" Value="*" Type="GridLength" />
+  <DockingManager version="1.3.0">
+    <ResizingPanel ResizeWidth="*" ResizeHeight="*" EffectiveSize="0,0" Orientation="Horizontal">
+      <ResizingPanel ResizeWidth="220" ResizeHeight="*" EffectiveSize="220,777.08" Orientation="Vertical">
+        <DockablePane ResizeWidth="*" ResizeHeight="0.5*" EffectiveSize="220,777.08" ID="d1155181-5db5-4942-aa65-2be76354302e" Anchor="Left" SelectedIndex="2" IsAutoHidden="false">
+          <DockableContent Name="FolderBrowser" FloatingWindowSize="250,400" ChildIndex="0" Width="217.097938144331" Height="571.268380805748" Anchor="Left" State="Docked" />
+          <DockableContent Name="UIBuilderProjectBrowser" FloatingWindowSize="250,400" ChildIndex="0" Width="217.097938144331" Height="571.268380805748" Anchor="Left" State="Docked" />
+          <DockableContent Name="UIBuilderDocumentStructure" FloatingWindowSize="250,400" ChildIndex="0" Width="220" Height="385.54" Anchor="Left" State="Docked" />
+        </DockablePane>
+      </ResizingPanel>
+      <ResizingPanel ResizeWidth="*" ResizeHeight="*" EffectiveSize="970,777.08" Orientation="Vertical">
+        <DockablePane ResizeWidth="*" ResizeHeight="125" EffectiveSize="717,125" ID="59005b12-aa05-44d4-aa84-52f72811d026" Anchor="Top" IsAutoHidden="true">
+          <DockableContent Name="FileList" FloatingWindowSize="250,400" ChildIndex="1" Width="419.5" Height="978.04" Anchor="Left" State="Docked" />
+        </DockablePane>
+        <ResizingPanel ResizeWidth="*" ResizeHeight="*" EffectiveSize="970,777.08" Orientation="Horizontal">
+          <DocumentPaneResizingPanel ResizeWidth="*" ResizeHeight="*" EffectiveSize="970,777.08" Orientation="Horizontal">
+            <DocumentPaneResizingPanel ResizeWidth="*" ResizeHeight="*" EffectiveSize="970,777.08" Orientation="Vertical">
+              <DocumentPane IsMain="true" ResizeWidth="*" ResizeHeight="*" EffectiveSize="970,777.08" />
+            </DocumentPaneResizingPanel>
+          </DocumentPaneResizingPanel>
+        </ResizingPanel>
+      </ResizingPanel>
+      <DockablePane ResizeWidth="311" ResizeHeight="*" EffectiveSize="311,777.08" ID="7ee9f9ce-2282-4e07-be31-ad442a079790" Anchor="Right" IsAutoHidden="false">
+        <DockableContent Name="UIBuilderNodeStyle" FloatingWindowSize="250,400" ChildIndex="2" Width="409" Height="397.041881612221" Anchor="Left" State="Docked" />
+      </DockablePane>
+    </ResizingPanel>
+    <Hidden />
+    <Windows />
+  </DockingManager>
+</Data>
