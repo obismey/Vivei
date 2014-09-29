@@ -7,7 +7,7 @@ namespace Vivei.Tools.Core
 {
 
     /// <summary>
-    /// TODO:  Ajouter une méthode Ececute et une méthode d'écoute
+    /// TODO:  Ajouter une méthode Execute et une méthode d'écoute
     /// </summary>
     public interface IService
     {
