@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model>
+  <Property SourceColumn="ANNEE" Name="ANNEE" Type="Nombre" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="NIVEAU" Name="NIVEAU" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="SOURCE" Name="SOURCE" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="TRIMESTRE" Name="TRIMESTRE" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="TYPE_COMPTE" Name="TYPE_COMPTE" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="VALEUR_POSTE" Name="VALEUR_POSTE" Type="Nombre" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="POSTE_CONSO" Name="POSTE_CONSO" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="METIER" Name="METIER" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="ACTIVITE" Name="ACTIVITE" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="SOUS_ACTIVITE" Name="SOUS_ACTIVITE" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="RESEAU" Name="RESEAU" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="CATMIN" Name="CATMIN" Type="Nombre" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="LOB" Name="LOB" Type="Nombre" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="LOBHRG" Name="LOBHRG" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="GARANTIE" Name="GARANTIE" Type="Texte" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+  <Property SourceColumn="HASPMT" Name="HASPMT" Type="Nombre" ConverterType="(Aucun)" Usage="(Aucun)" Priority="0" />
+</Model>

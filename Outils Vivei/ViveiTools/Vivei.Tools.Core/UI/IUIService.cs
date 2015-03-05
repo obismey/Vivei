@@ -41,6 +41,8 @@ namespace Vivei.Tools.Core.UI
         /// <param name="icone"></param>
         /// <param name="view"></param>
         IDocumentWindow OpenDocument(string caption, string icon, object view);
+
+        IWindowCollection Windows { get; }
     }
 
     public interface IWindow : System.ComponentModel.INotifyPropertyChanged, System.ComponentModel.INotifyPropertyChanging
@@ -53,6 +55,7 @@ namespace Vivei.Tools.Core.UI
     }
     public interface IToolWindow : IWindow
     {
+        string Name { get; }
         object State { get; }
         bool IsHidden { get; }
         void Hide();

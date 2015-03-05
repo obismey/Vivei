@@ -1,0 +1,40 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+Vivei.Tools.Core.UI
+</name>
+</assembly>
+<members>
+<member name="M:Vivei.Tools.Core.UI.StyleEditor.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Vivei.Tools.Core.UI.StyleEditor">
+	<summary>
+StyleEditor
+</summary>
+</member><member name="M:Vivei.Tools.Core.UI.GradientBrushEditor.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Vivei.Tools.Core.UI.GradientBrushEditor">
+	<summary>
+GradientBrushEditor
+</summary>
+</member><member name="P:Vivei.Tools.Core.UI.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:Vivei.Tools.Core.UI.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:Vivei.Tools.Core.UI.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+</members>
+</doc>

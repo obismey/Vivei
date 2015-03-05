@@ -32,6 +32,7 @@ Imports System.Windows.Media.TextFormatting
 Imports System.Windows.Navigation
 Imports System.Windows.Shapes
 Imports System.Windows.Shell
+Imports Vivei.Tools.Core.UI
 Imports Vivei.Tools.Plugin.UIBuilder
 
 

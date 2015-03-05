@@ -1,8 +1,17 @@
 ﻿<Window x:Class="MainWindow"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    Title="MainWindow" Height="350" Width="525">
+    Title="MainWindow" Height="350" Width="525" xmlns:igDock="http://infragistics.com/DockManager">
     <Grid>
-        
+        <igDock:XamDockManager>
+            <igDock:DocumentContentHost>
+                <igDock:SplitPane>
+                    <igDock:TabGroupPane>
+                        <igDock:ContentPane Header="Content Pane" />
+                        <igDock:ContentPane Header="Content Pane" />
+                    </igDock:TabGroupPane>
+                </igDock:SplitPane>
+            </igDock:DocumentContentHost>
+        </igDock:XamDockManager>
     </Grid>
 </Window>

@@ -38,6 +38,12 @@
     </AssemblyOriginatorKeyFile>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\..\References\SharpDevelop\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.CSharp">
+      <HintPath>..\..\References\SharpDevelop\Mono.CSharp.dll</HintPath>
+    </Reference>
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
@@ -52,22 +58,29 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Data\DataLoader.cs" />
+    <Compile Include="Data\Lookup.cs" />
+    <Compile Include="Data\Table.cs" />
     <Compile Include="Directories\IDirectoryService.cs" />
     <Compile Include="IService.cs" />
     <Compile Include="IApplication.cs" />
     <Compile Include="IPlugin.cs" />
+    <Compile Include="MonoCsharpEvaluator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scripting\IScriptingService.cs" />
     <Compile Include="UI\IUIService.cs" />
     <Compile Include="UI\MenuItem.cs" />
     <Compile Include="UI\MenuItemCollection.cs" />
     <Compile Include="UI\UIObject.cs" />
+    <Compile Include="UI\WindowCollection.cs" />
     <Compile Include="UndoRedo\DefaultUndoRedoToken.cs" />
     <Compile Include="UndoRedo\IUndoRedoContext.cs" />
     <Compile Include="UndoRedo\IUndoRedoService.cs" />
     <Compile Include="UndoRedo\IUndoRedoToken.cs" />
+    <Compile Include="Workflow\IWorkflowService.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Data\" />
+    <Folder Include="Excel\" />
     <Folder Include="Logging\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

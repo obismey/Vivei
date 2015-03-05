@@ -1,0 +1,4 @@
+D:\Outils Vivei\ViveiTools\Dotnet.Molap\bin\Debug\Dotnet.Molap.dll
+D:\Outils Vivei\ViveiTools\Dotnet.Molap\bin\Debug\Dotnet.Molap.pdb
+D:\Outils Vivei\ViveiTools\Dotnet.Molap\obj\Debug\Dotnet.Molap.dll
+D:\Outils Vivei\ViveiTools\Dotnet.Molap\obj\Debug\Dotnet.Molap.pdb

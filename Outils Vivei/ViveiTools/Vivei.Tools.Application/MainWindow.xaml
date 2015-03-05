@@ -2,7 +2,9 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:Vivei.Tools.Application"
-    xmlns:AvalonDock="clr-namespace:AvalonDock;assembly=AvalonDock"
+    xmlns:avalonDock="http://schemas.xceed.com/wpf/xaml/avalondock"
+    
+        
     Title="MainWindow" Height="350" Width="825" WindowState="Maximized">
     <Grid Background="White">
         <Grid.RowDefinitions>
@@ -10,7 +12,7 @@
             <RowDefinition Height="{Binding Source={x:Static local:DynamicSettings.Instance}, Path=ToolBarBottomHeight, Mode=TwoWay}" />
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
-        <Border Background="LightGray" Grid.ColumnSpan="3" >
+        <Border Background="LightGray" Grid.ColumnSpan="3" BorderThickness="0,0,0,1" BorderBrush="Black">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" Margin="20,10,0,10" DataContext="{x:Static local:UIService.Instance}">
                 <Button  Style="{DynamicResource ToolBarButtonStyle}" Margin="0,0,20,0" Command="{Binding Path=HomeMenuItem}">
                     <Button.Background>
@@ -61,17 +63,97 @@
             </StackPanel>
         </Border>
         <GridSplitter HorizontalAlignment="Stretch" Background="Transparent" Height="2" VerticalAlignment="Bottom" />
-        <AvalonDock:DockingManager Name="DockingManager" Grid.Row="1" Background="White" DataContext="{x:Static local:UIService.Instance}" DocumentsSource="{Binding Path=Documents}">
-            <!--<AvalonDock:ResizingPanel>
-                <AvalonDock:DockablePane Name="DefaultDockablePane" >
-                 
-                </AvalonDock:DockablePane>
-                <AvalonDock:DocumentPane>
-                </AvalonDock:DocumentPane>
-            </AvalonDock:ResizingPanel>-->
-        </AvalonDock:DockingManager>
+     
+        <avalonDock:DockingManager 
+            AllowMixedOrientation="True"
+            Name="DockingManager" 
+            Grid.Row="1" 
+            Background="White" 
+            DataContext="{x:Static local:UIService.Instance}" 
+            DocumentsSource="{Binding Path=Documents}"
+            AnchorablesSource="{Binding Path=Tools}">
+
+            <avalonDock:DockingManager.Resources>
+                <!--<Style TargetType="{x:Type avalonDock:LayoutAnchorable}">
+                    <Setter Property="IsVisible" Value="{Binding Content.IsActive, Mode=TwoWay}" />
+                </Style>-->
+            </avalonDock:DockingManager.Resources>
+            
+            <avalonDock:DockingManager.DocumentHeaderTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Content.Caption}" />
+                </DataTemplate>
+            </avalonDock:DockingManager.DocumentHeaderTemplate>
+
+            <avalonDock:DockingManager.AnchorableHeaderTemplate >
+                <DataTemplate>
+                    <TextBlock Text="{Binding Content.Caption}" />
+                </DataTemplate>
+            </avalonDock:DockingManager.AnchorableHeaderTemplate>
+            
+            <avalonDock:DockingManager.LayoutItemTemplate>
+                <DataTemplate>
+                    <ContentPresenter Content="{Binding View}" />
+                </DataTemplate>
+            </avalonDock:DockingManager.LayoutItemTemplate>
+            
+            <avalonDock:DockingManager.DocumentTitleTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Content.Caption}" />
+                </DataTemplate>
+            </avalonDock:DockingManager.DocumentTitleTemplate>
+
+            <avalonDock:DockingManager.AnchorableTitleTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Content.Caption}" />
+                </DataTemplate>
+            </avalonDock:DockingManager.AnchorableTitleTemplate>
+
+            <avalonDock:DockingManager.LayoutItemContainerStyle>
+                <Style >
+                  <Setter Property="avalonDock:LayoutItem.IsSelected" Value="{Binding Model.IsActive, Mode=TwoWay}" />
+                   <!--   <Setter Property="avalonDock:LayoutAnchorableItem.HideCommand" Value="{Binding Model}" />-->
+                    <Setter Property="UIElement.Visibility" Value="{Binding Model.Visibility, Mode=TwoWay}" />
+                </Style>
+                
+            </avalonDock:DockingManager.LayoutItemContainerStyle>
+            
+           
+            <avalonDock:LayoutRoot>
+                <avalonDock:LayoutPanel Orientation="Horizontal">
+                    <avalonDock:LayoutAnchorablePane Name="ToolsPane" DockWidth="200">
+                    </avalonDock:LayoutAnchorablePane>
+                    <!--<avalonDock:LayoutDocumentPaneGroup Orientation="Vertical">
+                       
+                        <avalonDock:LayoutDocumentPane x:Name="DocumentsPaneTop" >
+                            <avalonDock:LayoutDocument />
+                        </avalonDock:LayoutDocumentPane>
+                        <avalonDock:LayoutDocumentPane x:Name="DocumentsPaneBottom" >
+                            <avalonDock:LayoutDocument />
+
+                        </avalonDock:LayoutDocumentPane>
+                        <avalonDock:LayoutDocumentPaneGroup Orientation="Horizontal">
+
+                            <avalonDock:LayoutDocumentPane x:Name="DocumentsPaneLeft" >
+                                <avalonDock:LayoutDocument />
+
+                            </avalonDock:LayoutDocumentPane>
+                            <avalonDock:LayoutDocumentPane x:Name="DocumentsPaneRight" >
+                                <avalonDock:LayoutDocument />
+
+                            </avalonDock:LayoutDocumentPane>
+                        </avalonDock:LayoutDocumentPaneGroup>
+                    </avalonDock:LayoutDocumentPaneGroup>-->
+                    <avalonDock:LayoutDocumentPane x:Name="DocumentsPane" >
+                      
+                    </avalonDock:LayoutDocumentPane>
+                </avalonDock:LayoutPanel>
+            </avalonDock:LayoutRoot>
+            
+            
+        </avalonDock:DockingManager>
         <Border Grid.Row="2" BorderThickness="1" >
-         <TextBlock Text="Statut" Padding="2" Background="White" />
+            <TextBlock Text="Statut" Padding="2" Background="White" />
         </Border>
     </Grid>
 </Window>

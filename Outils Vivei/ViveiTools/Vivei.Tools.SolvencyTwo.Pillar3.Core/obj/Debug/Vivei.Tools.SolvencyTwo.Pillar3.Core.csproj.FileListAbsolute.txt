@@ -1,0 +1,4 @@
+D:\Outils Vivei\ViveiTools\Vivei.Tools.SolvencyTwo.Pillar3.Core\bin\Debug\Vivei.Tools.SolvencyTwo.Pillar3.Core.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.SolvencyTwo.Pillar3.Core\bin\Debug\Vivei.Tools.SolvencyTwo.Pillar3.Core.pdb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.SolvencyTwo.Pillar3.Core\obj\Debug\Vivei.Tools.SolvencyTwo.Pillar3.Core.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.SolvencyTwo.Pillar3.Core\obj\Debug\Vivei.Tools.SolvencyTwo.Pillar3.Core.pdb

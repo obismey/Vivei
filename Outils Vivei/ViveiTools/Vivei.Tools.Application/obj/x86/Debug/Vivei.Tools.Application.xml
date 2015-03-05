@@ -14,6 +14,42 @@ InitializeComponent
 	<summary>
 MainWindow
 </summary>
+</member><member name="M:Vivei.Tools.Application.WorkflowDesigner.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Vivei.Tools.Application.WorkflowDesigner">
+	<summary>
+WorkflowDesigner
+</summary>
+</member><member name="F:Vivei.Tools.Application.ScriptView.BottomViewContentControl">
+	<summary>
+BottomViewContentControl Name Field
+</summary>
+</member><member name="M:Vivei.Tools.Application.ScriptView.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Vivei.Tools.Application.ScriptView">
+	<summary>
+ScriptView
+</summary>
+</member><member name="M:Vivei.Tools.Application.WindowListWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Vivei.Tools.Application.WindowListWindow">
+	<summary>
+WindowListWindow
+</summary>
+</member><member name="M:Vivei.Tools.Application.HelpWindow.InitializeComponent">
+	<summary>
+InitializeComponent
+</summary>
+</member><member name="T:Vivei.Tools.Application.HelpWindow">
+	<summary>
+HelpWindow
+</summary>
 </member><member name="M:Vivei.Tools.Application.Application.InitializeComponent">
 	<summary>
 InitializeComponent

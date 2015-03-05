@@ -1,0 +1,9 @@
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\bin\Debug\Vivei.Tools.Plugins.Reserving.Core.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\bin\Debug\Vivei.Tools.Plugins.Reserving.Core.pdb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\bin\Debug\Vivei.Tools.Core.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\bin\Debug\Mono.CSharp.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\bin\Debug\ICSharpCode.SharpZipLib.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\bin\Debug\Vivei.Tools.Core.pdb
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\obj\Debug\Vivei.Tools.Plugins.Reserving.Core.csprojResolveAssemblyReference.cache
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\obj\Debug\Vivei.Tools.Plugins.Reserving.Core.dll
+D:\Outils Vivei\ViveiTools\Vivei.Tools.Plugins.Reserving.Core\obj\Debug\Vivei.Tools.Plugins.Reserving.Core.pdb

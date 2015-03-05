@@ -11,3 +11,4 @@ D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.vbproj.GenerateRe
 D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.exe
 D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.xml
 D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.pdb
+D:\Outils Vivei\ViveiTools\AppJetable\obj\x86\Debug\AppJetable.exe.licenses

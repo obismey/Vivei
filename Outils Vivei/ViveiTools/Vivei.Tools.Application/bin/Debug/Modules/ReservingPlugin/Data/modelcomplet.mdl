@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model>
+  <Property SourceColumn="CODE_BANQUE" Name="CODE_BANQUE" Type="Texte" ConverterType="(Aucun)" Usage="Segmentation" Priority="0" />
+  <Property SourceColumn="CODE_POLICE" Name="CODE_POLICE" Type="Texte" ConverterType="(Aucun)" Usage="Segmentation" Priority="0" />
+  <Property SourceColumn="SOUS_CATEGORIE" Name="SOUS_CATEGORIE" Type="Texte" ConverterType="(Aucun)" Usage="Segmentation" Priority="0" />
+  <Property SourceColumn="GENERATION_TARIF" Name="GENERATION_TARIF" Type="Texte" ConverterType="(Aucun)" Usage="Segmentation" Priority="0" />
+  <Property SourceColumn="CODE_GARANTIE" Name="CODE_GARANTIE" Type="Texte" ConverterType="(Aucun)" Usage="Garantie" Priority="0" />
+  <Property SourceColumn="TRIM_SURV_COMPLET" Name="TRIM_SURV_COMPLET" Type="Nombre" ConverterType="(Aucun)" Usage="Survenance" Priority="0" />
+  <Property SourceColumn="TRIM_SURV_DEROULT_COMPLET" Name="TRIM_SURV_DEROULT_COMPLET" Type="Nombre" ConverterType="(Aucun)" Usage="Deroulement" Priority="0" />
+  <Property SourceColumn="MONTANT_REGLE" Name="MONTANT_REGLE" Type="Nombre" ConverterType="(Aucun)" Usage="Sinistre" Priority="0" />
+  <Property SourceColumn="PROVISION_SIN_CONNUS" Name="PROVISION_SIN_CONNUS" Type="Nombre" ConverterType="(Aucun)" Usage="Provision" Priority="0" />
+  <Property SourceColumn="PERIMETRE" Name="PERIMETRE" Type="Texte" ConverterType="(Aucun)" Usage="Segmentation" Priority="0" />
+</Model>

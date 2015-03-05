@@ -9,6 +9,8 @@ Public Class ExamplePlugin
     Private _Application As IApplication
     Dim _UIService As UI.IUIService
 
+  
+
     Public Sub New()
 
     End Sub
@@ -183,3 +185,12 @@ Public Class ActiveFolder
 
     Public Shared Property Instance As ActiveFolder
 End Class
+
+Public Module ExtensionModule
+    <System.Runtime.CompilerServices.Extension()> _
+    Public Function ToImageSource(ByVal icon As System.Drawing.Icon) As ImageSource
+        Dim imageSource As ImageSource = System.Windows.Interop.Imaging.CreateBitmapSourceFromHIcon(icon.Handle, Int32Rect.Empty, BitmapSizeOptions.FromEmptyOptions())
+
+        Return imageSource
+    End Function
+End Module

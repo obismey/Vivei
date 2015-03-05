@@ -54,14 +54,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="ExcelViewer">
-      <HintPath>C:\Users\Consultant\Desktop\ExcelViewer\ExcelViewer\bin\Debug\ExcelViewer.dll</HintPath>
+      <HintPath>..\..\References\ExcelViewer.dll</HintPath>
     </Reference>
     <Reference Include="FsRichTextBox">
-      <HintPath>C:\Users\Consultant\Desktop\FsRichTextBox\FsRichTextBox\bin\Release\FsRichTextBox.dll</HintPath>
+      <HintPath>..\..\References\FsRichTextBox.dll</HintPath>
     </Reference>
     <Reference Include="ReachFramework" />
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Printing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq" />
@@ -79,6 +80,10 @@
   </ItemGroup>
   <ItemGroup>
     <Page Include="Browser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FileBroswser.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -118,6 +123,9 @@
       <DependentUpon>Browser.xaml</DependentUpon>
     </Compile>
     <Compile Include="ExamplePlugin.vb" />
+    <Compile Include="FileBroswser.xaml.vb">
+      <DependentUpon>FileBroswser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb">
       <SubType>Code</SubType>
     </Compile>
